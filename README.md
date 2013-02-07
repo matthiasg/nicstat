@@ -1,4 +1,29 @@
 nicstat
 =======
 
-smartos nicstat version with added support for zone interfaces and zonenames
+a small addition to the nice tool from http://www.brendangregg.com.
+
+- increased the column size of the Interface Name and added the Zone from kstat
+- added rge0 interface
+
+Example Output
+--------------
+
+         Time        Int                                 Zone    rKb/s   wKb/s   rPk/s   wPk/s    rAvs    Zone   %Util     Sat
+     08:52:09        mac                               Unknown    5.16    5.05   18.65    8.18  283.36  631.89    0.01    0.00
+     08:52:09        rge0                               global    0.00    0.00    0.00    0.00  283.36  631.89    0.00    0.00
+     08:52:09       stub0                               global    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00
+     08:52:09       stub1                               global    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00
+     08:52:09     z3_net0 ea5af66d-c877-4837-b4fa-43820f398b0f    0.00    0.00    0.00    0.00  141.08   42.00    0.00    0.00
+     08:52:09     z1_net0                                npmjs    0.00    0.00    0.00    0.00  141.08   42.00    0.00    0.00
+     08:52:09     z4_net0 6a11cabb-08fd-4338-9a67-41e51f397ee2    0.00    0.00    0.00    0.00  141.16   69.91    0.00    0.00
+     08:52:09     z5_net0                                  irc    0.00    0.00    0.00    0.00  141.01   42.00    0.00    0.00
+     08:52:09     z2_net0 20cdf845-8ac0-45e3-99b0-eebb0212bff5    0.00    0.00    0.00    0.00  180.27   92.34    0.00    0.00
+     08:52:09     z6_net0 a299fa56-3a3c-45ff-8af5-d75d7344e0f4    0.00    0.00    0.00    0.00  101.79   72.45    0.00    0.00
+     08:52:09     z9_net0 6afd51a3-d6e9-4502-9494-8dfaa327cffc    0.00    0.00    0.00    0.00  336.95  146.40    0.00    0.00
+     08:52:09    z10_net0 d0733f76-2055-445f-9556-519525d0edd4    0.00    0.00    0.00    0.00  126.45  342.49    0.00    0.00
+     08:52:09     z7_net0 e9703c55-6dc1-4f1e-beec-6ddeb18c26ca    0.00    0.00    0.00    0.00   82.52 5953.77    0.00    0.00
+     08:52:09     z8_net0 af8512a0-4988-427f-8083-c6e1f4f87c7d    0.00    0.00    0.00    0.00   99.89 1177.28    0.00    0.00
+     08:52:09     z8_net1 af8512a0-4988-427f-8083-c6e1f4f87c7d    0.00    0.00    0.00    0.00 3232.64  103.17    0.00    0.00
+     08:52:09    z11_net0 5389d897-d369-42f6-8fa4-4f25bef7a9a3    0.00    0.00    0.00    0.00  122.40   76.36    0.00    0.00
+
